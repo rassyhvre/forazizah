@@ -1067,7 +1067,7 @@ function createHintText() {
   canvas.width = canvas.height = canvasSize;
   const context = canvas.getContext('2d');
   const fontSize = 50;
-  const text = 'Happy Girlfriend Day!';
+  const text = 'HBD SAYANG ACU !';
   context.font = `bold ${fontSize}px Arial, sans-serif`;
   context.textAlign = 'center';
   context.textBaseline = 'middle';
@@ -1218,6 +1218,10 @@ function onCanvasClick(event) {
 }
 
 renderer.domElement.addEventListener("click", onCanvasClick);
+
+animate();
+
+renderer.domElement.addEventListener('click', onCanvasClick);
 
 animate();
 
